@@ -5,7 +5,7 @@ import models.BookingInfo
 import java.time.LocalDate
 
 // Define the BookingInfo table
-private class BookingInfoTable(tag: Tag) extends Table[BookingInfo](tag, "booking_info") {
+class BookingInfoTable(tag: Tag) extends Table[BookingInfo](tag, "booking_info") {
   def bookingId = column[Int]("booking_id", O.PrimaryKey, O.AutoInc) // Auto-increment primary key
   def guestId = column[Long]("guest_id")
   def roomId = column[Int]("room_id")

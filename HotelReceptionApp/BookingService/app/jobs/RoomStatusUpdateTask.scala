@@ -2,7 +2,7 @@ package jobs
 
 import javax.inject._
 import play.api.Logging
-import repositories.{BookingDetailsRepository, GuestRepository, RoomRepository}
+import repositories.{GuestRepository, RoomRepository}
 import scala.concurrent.{ExecutionContext, Future}
 import java.util.concurrent.{Executors, ScheduledExecutorService, TimeUnit}
 import java.time.LocalDate

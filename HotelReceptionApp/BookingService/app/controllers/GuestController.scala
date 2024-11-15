@@ -7,15 +7,16 @@ import repositories.GuestRepository
 import scala.concurrent.{ExecutionContext, Future}
 import play.api.libs.json.Json
 import play.api.Logging
+import services.GuestService
 
 @Singleton
 class GuestController @Inject()(
                                  val controllerComponents: ControllerComponents,
-                                 val guestRepository: GuestRepository
+                                 val guestService: GuestService
                                )(implicit ec: ExecutionContext) extends BaseController with Logging {
 
   def getActiveGuests: Action[AnyContent] = Action.async {
-    guestRepository.getActiveGuests.map { guests =>
+    guestService.getActiveGuests.map { guests =>
       // Filter only the required fields (name and email) and convert to JSON
       val guestInfo = guests.map(guest => Json.obj("name" -> guest.name, "email" -> guest.email))
       Ok(Json.obj("activeGuests" -> guestInfo))

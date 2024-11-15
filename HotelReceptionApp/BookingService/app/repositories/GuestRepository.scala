@@ -1,6 +1,8 @@
 package repositories
 
 import models.Guest
+import models.db.GuestTable
+
 import javax.inject.Inject
 import scala.concurrent.{ExecutionContext, Future}
 import play.api.db.slick.DatabaseConfigProvider

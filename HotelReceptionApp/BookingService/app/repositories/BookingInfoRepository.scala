@@ -1,13 +1,15 @@
 package repositories
 
-package repositories
 
 import models.BookingInfo
+import models.db.BookingInfoTable
+
 import javax.inject.Inject
 import scala.concurrent.{ExecutionContext, Future}
 import play.api.db.slick.DatabaseConfigProvider
 import slick.jdbc.JdbcProfile
 import java.time.LocalDate
+
 
 class BookingInfoRepository @Inject()(dbConfigProvider: DatabaseConfigProvider)(implicit ec: ExecutionContext) {
 
