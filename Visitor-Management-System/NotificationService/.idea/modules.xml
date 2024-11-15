@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/notification-service.iml" filepath="$PROJECT_DIR$/.idea/modules/notification-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/notification-service.notification-service-build.iml" filepath="$PROJECT_DIR$/.idea/modules/notification-service.notification-service-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/NotificationService.iml" filepath="$PROJECT_DIR$/.idea/modules/NotificationService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/NotificationService.NotificationService-build.iml" filepath="$PROJECT_DIR$/.idea/modules/NotificationService.NotificationService-build.iml" />
     </modules>
   </component>
 </project>

@@ -10,7 +10,7 @@ lazy val akkaStreamKafkaVersion = "2.1.1" // Latest available for Scala 2.13
 
 lazy val root = (project in file("."))
   .settings(
-    name := "notification-service",
+    name := "NotificationService",
     libraryDependencies ++= Seq(
       "com.typesafe.akka" %% "akka-actor-typed" % akkaVersion,
       "ch.qos.logback" % "logback-classic" % "1.2.13",
